@@ -5,7 +5,116 @@
   <meta name="robots" content="noimageindex, noarchive">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
-   <body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#flip2").click(function(){
+    $("#panel2").slideToggle("slow");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#flip3").click(function(){
+    $("#panel3").slideToggle("slow");
+  });
+});
+</script>
+
+<script>
+$(document).ready(function(){
+  $("#flip4").click(function(){
+    $("#panel4").slideToggle("slow");
+  });
+});
+</script>
+
+
+            </head>
+
+  <script>
+              function myFunction() {
+                var element = document.getElementById("mybutton");
+
+                if (element.classList) {
+                  element.classList.toggle("mystyle");
+                } else {
+                  var classes = element.className.split(" ");
+                  var i = classes.indexOf("mystyle");
+
+                  if (i >= 0)
+                    classes.splice(i, 1);
+                  else
+                    classes.push("mystyle");
+                    element.className = classes.join(" ");
+                }
+              }
+              </script>
+              <script>
+              function myFunction2() {
+                var element = document.getElementById("mybutton2");
+
+                if (element.classList) {
+                  element.classList.toggle("mystyle");
+                } else {
+                  var classes = element.className.split(" ");
+                  var i = classes.indexOf("mystyle");
+
+                  if (i >= 0)
+                    classes.splice(i, 1);
+                  else
+                    classes.push("mystyle");
+                    element.className = classes.join(" ");
+                }
+              }
+              </script>
+
+              <script>
+              function myFunction3() {
+                var element = document.getElementById("mybutton3");
+
+                if (element.classList) {
+                  element.classList.toggle("mystyle");
+                } else {
+                  var classes = element.className.split(" ");
+                  var i = classes.indexOf("mystyle");
+
+                  if (i >= 0)
+                    classes.splice(i, 1);
+                  else
+                    classes.push("mystyle");
+                    element.className = classes.join(" ");
+                }
+              }
+              </script>
+              <script>
+              function myFunction4() {
+                var element = document.getElementById("mybutton4");
+
+                if (element.classList) {
+                  element.classList.toggle("mystyle");
+                } else {
+                  var classes = element.className.split(" ");
+                  var i = classes.indexOf("mystyle");
+
+                  if (i >= 0)
+                    classes.splice(i, 1);
+                  else
+                    classes.push("mystyle");
+                    element.className = classes.join(" ");
+                }
+              }
+              </script>
+              <body>
        <div id="root">
     <div class="app">
         <div class="sc-kkGfuU ixgIOn">
@@ -68,20 +177,23 @@
                 </table>
                 <p>*부가세가 포함된 실제 지불금액입니다.</p>
             </div>
-            <div height="0" class="sc-ckVGcZ cEobYx"><button type="button"><strong>데이터 제공</strong><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="데이터 제공 토글"></button>
-                <div>
-                    <p>요금제는 기본 데이터 알을 모두 사용한 후, 최대 400Kbps 속도로 데이터 지속 이용 가능합니다.<br><span>고객의 선택에 따라 기본 데이터(알)/충전 알 까지 소진 후 QoS 적용 또는 바로 QoS 적용 가능합니다.</span></p>
+
+            <div height="0" class="sc-ckVGcZ cEobYx"><button id="flip" onclick="myFunction()" type="button"><strong>가입 및 유의사항</strong><img  id="mybutton" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="가입 및 유의사항 토글"></button>
+                <div id="panel">
+                <p>요금제는 기본 데이터 알을 모두 사용한 후, 최대 400Kbps 속도로 데이터 지속 이용 가능합니다.<br><span>고객의 선택에 따라 기본 데이터(알)/충전 알 까지 소진 후 QoS 적용 또는 바로 QoS 적용 가능합니다.</span></p>
                     <p>본 요금제에 가입된 단말기에 한하여, KT WiFi 서비스가 기본 제공됩니다.</p>
                 </div>
             </div>
-            <div height="0" class="sc-ckVGcZ ysSmT"><button type="button"><strong>음성 이용</strong><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="음성 이용 토글"></button>
-                <div>
+
+<div height="0" class="sc-ckVGcZ cEobYx2"><button id="flip2" onclick="myFunction2()" type="button"><strong>음성 이용</strong><img id="mybutton2" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="음성 이용 토글"></button>
+                <div id="panel2">
                     <p>KT휴대폰 지정 2회선 무제한 음성 통화<br><span>미리 지정한 KT 이동전화 요금제를 사용하는 회선 2회선에 한하여 무제한 통화가 가능합니다.</span><br><span>지정 번호는 월 1회 변경할 수 있습니다.</span></p>
                     <p>지정 번호 이외 음성 이용<br><span>음성은 기본 데이터 알에서 차감(차감 요율 : 음성/영상 통화 2.5알(125KB)/초) 됩니다.</span></p>
                 </div>
             </div>
-            <div height="0" class="sc-ckVGcZ ysSmT"><button type="button"><strong>조절 제공량</strong><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="조절 제공량 토글"></button>
-                <div>
+
+<div height="0" class="sc-ckVGcZ cEobYx2"><button id="flip3" onclick="myFunction3()" type="button"><strong>조절 제공량</strong><img id="mybutton3" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="조절 제공량 토글"></button>
+                <div id="panel3">
                     <p>제공되는 기본 데이터 알을 조절하여 다음의 서비스를 이용할 수 있으며, 알이 소진되면 데이터, 음성, 문자 서비스 이용이 제한됩니다.<br><span>데이터 0.01알/0.5KB</span><br><span>음성/영상 통화 2.5알(125KB 상당)/초</span><br><span>문자 SMS, LMS 15알(750KB 상당)/건, MMS 200알(10,000KB 상당)/건</span></p>
                     <p>기본 제공 문자 일 200건은 SMS/LMS/MMS 동일하게 1건씩 차감되며, 200건 소진 시 기본 데이터 알 내에서 차감하여 사용됩니다.</p>
                     <p>본 요금제에서 제공하는 국내음성통화에는 HD보이스가 포함됩니다.</p>
@@ -90,8 +202,9 @@
                     <p>충전 시 1.1원(부가세포함) 당 1알로 환산됩니다.</p>
                 </div>
             </div>
-            <div height="0" class="sc-ckVGcZ ysSmT"><button type="button"><strong>가입 및 유의사항</strong><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="가입 및 유의사항 토글"></button>
-                <div>
+
+<div height="0" class="sc-ckVGcZ cEobYx2"><button id="flip4" onclick="myFunction4()" type="button"><strong>가입 및 유의사항</strong><img id="mybutton4" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxwYXRoIGZpbGw9IiMxRTFEMjkiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTAgNmMwIC4yODYuMTIyLjU1OC4zMzYuNzQ3bDkgOGEuOTk5Ljk5OSAwIDAgMCAxLjMyOCAwbDktOGExIDEgMCAwIDAtMS4zMjgtMS40OTRMMTAgMTIuNjYzbC04LjMzNi03LjQxQS45OTkuOTk5IDAgMCAwIDAgNiIvPgo8L3N2Zz4K" alt="가입 및 유의사항 토글"></button>
+                <div id="panel4">
                     <p>본 요금제는 만 12세 이하 미성년자에 한해 가입이 가능하며, 만 13세 도래시 다음달 1일 Y틴20 요금제로 자동 전환됩니다.</p>
                     <p>주민등록번호 기준 1인당 1개의 번호만 가입 가능합니다.</p>
                     <p>신규 가입 / 요금제 변경 / 충전 상한 알 변경 시에는 부모 동의가 필요합니다.</p>
@@ -104,6 +217,7 @@
                     <p>요금제에 제공되거나 함께 사용할 수 있는 부가/기타 서비스의 상세 내용은 KT닷컴 내 서비스 별 안내 페이지를 참고하세요.</p>
                 </div>
             </div>
+
             <div class="sc-jWBwVP cWBjoT">
                 <div class="sc-brqgnP nFaqm">
                     <h2 class="sc-eNQAEJ fCXiKr">단말기 스펙안내</h2>
