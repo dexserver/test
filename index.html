@@ -39,7 +39,7 @@ body,input,textarea,select,button {
 	color:rgb(51,51,51);
 	letter-spacing:-0.5px;
 }
-#__next,#modal,header,main,footer,article,nav,section,div {
+#__next,#modal,header,main,footer,article,nav,section, {
 	display:flex;
 	flex-direction:column;
 	-webkit-box-align:stretch;
@@ -1311,7 +1311,8 @@ prevEl : '.swiper-button-left', // 이번 버튼 클래스명
 						<p>
 							번개페이리 슝하고 결제하면 샥하고 도착!
 						</p>
-						<b>집에서 빠르고 간편하게 받아보자!</b><b></b><span></span>
+						<b>집에서 빠르고 간편하게 받아보자!</b>
+                        <br></br><br></br>
 					</div>
 					
 					
@@ -1374,28 +1375,16 @@ function myFunction() {
 </script>
 
 
-
-<li class="dropdown dropdown-3">
-      TranslateZ
-      <ul class="dropdown_menu dropdown_menu-3">
-        <li class="dropdown_item-1">Item 1</li>
-        <li class="dropdown_item-2">Item 2</li>
-        <li class="dropdown_item-3">Item 3</li>
-          <li class="dropdown_item-4">Item 4</li>
-          <li class="dropdown_item-5">Item 5</li>
-      </ul>
-    </li>
-
 <div class="w3-container">
 
   <div class="w3-dropdown-click">
-    <button onclick="myFunction()" style="width:100%" class="w3-button w3-black">모델명 선택</button>
+    <button onclick="myFunction()" style="width:540px" class="w3-button w3-black">모델명 선택</button>
     <div id="Demo" style="width:100%" class="w3-dropdown-content w3-bar-block w3-border">
 
 
 
   
-  
+  <button class="w3-bar-item w3-button" onclick="filterSelection('all')"> 전체 상품 </button>
   <button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 8')"> 아이폰 8</button>
   <button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 7')"> 아이폰 7</button>
   <button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 11 Pro')">아이폰 11 Pro</button>
@@ -1406,17 +1395,6 @@ function myFunction() {
 
 
 
-
-
-<div class="container">
-
-
-
-
-
-
-
-</div>
 
 <script>
 filterSelection("all")
