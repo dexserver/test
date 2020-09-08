@@ -9,6 +9,120 @@ You need to enable JavaScript to run this app.
 
 
 <style>
+
+nav {    
+    display: block;
+    
+  }
+  nav ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+  }
+  .nav a {
+    display:block; 
+    background: #111; 
+    color:#fff; 
+    text-decoration: none;
+    padding: .8em 1.8em;
+    text-transform: uppercase;
+    font-size: 80%;letter-spacing: 8px;
+    
+    position: relative;
+  }
+  .nav{  
+    vertical-align: top; 
+    display: inline-block;
+    box-shadow: 1px -1px -1px 1px #000, -1px 1px -1px 1px #fff, 0 0 6px 3px #fff;
+    border-radius:6px;
+  }
+  .nav li{position: relative;}
+  .nav > li { 
+    float:left; 
+    border-bottom: 4px #aaa solid; 
+    margin-right: 1px; 
+  } 
+  .nav > li > a { 
+    margin-bottom:1px;
+    box-shadow:inset 0 2em .33em -.5em #555; 
+  }
+  .nav > li:hover , .nav > li:hover >a{  border-bottom-color:orange;}
+  .nav li:hover > a { color:orange; }
+  .nav > li:first-child  { border-radius: 4px 0 0 4px;} 
+  .nav > li:first-child>a{border-radius: 4px 0 0 0;}
+  .nav > li:last-child  { 
+    border-radius: 0 0 4px 0; 
+    margin-right: 0;
+  } 
+  .nav > li:last-child >a{border-radius: 0 4px 0 0; }
+  .nav li li a { margin-top:1px}
+  
+  
+  
+    .nav li a:first-child:nth-last-child(2):before { 
+     content:""; 
+     position: absolute; 
+     height:0; 
+     width: 0; 
+     border: 5px solid transparent; 
+     top: 50% ;
+     right:5px;  
+   }
+   
+   
+   
+   
+   
+   /* submenu positioning*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  orange;
+  z-index: 1;
+  left: -99999em;
+}
+.nav > li:hover > ul {
+  left: auto;
+  padding-top: 5px  ;
+  min-width: 100%;
+}
+.nav > li li ul {  border-left:1px solid #fff;}
+
+
+.nav > li li:hover > ul { 
+ /* margin-left: 1px */
+  left: 100%;
+  top: -1px;
+}
+/* arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: #aaa; 
+}
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: orange; 
+  margin-top:-5px
+}
+.nav li li > a:first-child:nth-last-child(2):before {  
+  border-left-color: #aaa; 
+  margin-top: -5px
+}
+.nav li li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-right-color: orange;
+  right: 10px; 
+}
+
+
+
+
+
+
+
+
+
+
+
 *,::before,::after {
 	box-sizing:border-box;
 }
@@ -1287,6 +1401,8 @@ prevEl : '.swiper-button-left', // 이번 버튼 클래스명
 						<h2>번개모바일 장점 하나<span role="img"><img src="data:image/png;base64,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" alt="첫 번째"></span></h2>
 						<p>전문 검수팀에서 검수한 믿을 수 있는 중고폰</p>
                         <b>30일 번개케어 제공</b>
+                        
+                        <br></br><br></br>
 
 						<b></b><span></span>
 						<h2>번개모바일 장점 둘<span role="img"><img src="data:image/png;base64,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" alt="두 번째"></span></h2>
@@ -1294,7 +1410,7 @@ prevEl : '.swiper-button-left', // 이번 버튼 클래스명
 							번개페이리 슝하고 결제하면 샥하고 도착!
 						</p>
 						<b>집에서 빠르고 간편하게 받아보자!</b>
-                        <br></br><br></br>
+                        <br></br><br></br><br></br>
 					</div>
 					
 					
@@ -1402,37 +1518,34 @@ for (var i = 0; i < btns.length; i++) {
 }
 </script>
                   
-<style>
-
-
-
-</style>
    
-<div class="w3-container">
+   
+<nav>
+ <ul class="nav">
+  <li><a href="#">삼성</a>
+    <ul>
+    <li><a onclick="filterSelection('아이폰 11 Pro')">아이폰 11 Pro</a></li>
+    <li><a onclick="filterSelection('아이폰 x')">아이폰 X</a></li>
+    <li><a onclick="filterSelection('아이폰 8')">아이폰 8</a></li>
+    <li><a onclick="filterSelection('아이폰 7')"> 아이폰 7</a></li>
+   </ul>
+  </li>
+        
+  <li><a href="#">애플</a>
+   <ul>
+    <li><a onclick="filterSelection('아이폰 11 Pro')">아이폰 11 Pro</a></li>
+    <li><a onclick="filterSelection('아이폰 x')">아이폰 X</a></li>
+    <li><a onclick="filterSelection('아이폰 8')">아이폰 8</a></li>
+    <li><a onclick="filterSelection('아이폰 7')"> 아이폰 7</a></li>
+   </ul>
+  </li>
+        
+ </ul>
+</nav>
 
-  <div class="w3-dropdown-click">
-    <button onclick="myFunction()" class="w3-button w3-black">모델명 선택</button>
-    <div id="Demo"  class="w3-dropdown-content w3-bar-block w3-border">
-
-
-
-<button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 11 Pro')">아이폰 11 Pro</button>
-<button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 x')">아이폰 X</button>
-<button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 8')">아이폰 8</button>
-<button class="w3-bar-item w3-button" onclick="filterSelection('아이폰 7')"> 아이폰 7</button>
-  
-    </div>
-  </div>
-</div>
-                    
-                    
-
-                   
-                          
-                    
-                    
+      
                 
-                    
+
 <div class="sc-frDJqD kamcuN">
 <nav class="listfilter 아이폰 11 Pro">
 						<ul class="sc-bYSBpT biefkf">    
@@ -1821,3 +1934,4 @@ for (var i = 0; i < btns.length; i++) {
 </div>
 
 </body>
+
